@@ -91,20 +91,100 @@
 #     print("The biggest number is : ",num3)
 
 #Modules in python
+# import math
+# print(math.factorial(5))
+
+# print(math.floor(6.8))
+# print(math.ceil(6.8))
+
+# import keyword
+# print(keyword.kwlist)
+
+# import random
+# print(random.randint(1,100))
+
+# import datetime
+# print(datetime.datetime.now())
+
+# #loops
+
+# num = int(input("Enter the number: "))
+# i = 10
+# while(i!=0):
+#     print(num ," * ", i  ," : ", "= ",num*i)
+#     i = i-1
+
+# # while with else
+# x = 1
+# while(x<3):
+#     print(x)
+#     x+=1
+# else:
+#     print("End")
+
+# guessing game code
+# import random
+# jackpot = random.randint(1,5)
+# inputNumber = int(input("Enter the number : "))
+
+
+# while(inputNumber!=jackpot):
+#     if(inputNumber>jackpot):
+#         print("Guess lower")
+        
+#     else:
+#         print("Guess higher")
+#     inputNumber = int(input("Enter the number: "))
+# else:
+#     print("You won!!")
+
+# import random
+
+# jackpot = random.randint(1, 5)
+# attempts = 0  # Initialize a counter for attempts
+# inputNumber = int(input("Enter the number: "))
+
+# while inputNumber != jackpot:
+#     attempts += 1  # Increment the counter for each attempt
+#     if inputNumber > jackpot:
+#         print("Guess lower")
+#     else:
+#         print("Guess higher")
+#     inputNumber = int(input("Enter the number: "))
+# else:
+#     attempts += 1  # Increment the counter for the final correct guess
+#     print("You won!!")
+#     print(f"It took you {attempts} attempts to guess the correct number.")
+
+
+# for i in range(1,10,2):
+#     print(i)
+
+# for i in 'Chittaranjan':
+#     print (i)
+
+
+population = 10000
+rateOfGrowth = 0.10
+
+for i in range (1,10):
+    population = population * rateOfGrowth + population
+    print("population at the end of year ",i,": ",population)
+
+# Calcul;ate the sequenxce till the nth term
+#1/1! + 2/2! +...
+
+n = int(input("Enter the nth term: "))
 import math
-print(math.factorial(5))
+sum = 0
+for i in range(1,n+1):
+    sum = sum + i/math.factorial(i)
+print(sum)
 
-print(math.floor(6.8))
-print(math.ceil(6.8))
 
-import keyword
-print(keyword.kwlist)
 
-import random
-print(random.randint(1,100))
 
-import datetime
-print(datetime.datetime.now())
+
 
 
 
