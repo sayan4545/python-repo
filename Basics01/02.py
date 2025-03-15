@@ -164,23 +164,81 @@
 #     print (i)
 
 
-population = 10000
-rateOfGrowth = 0.10
-
-for i in range (1,10):
-    population = population * rateOfGrowth + population
-    print("population at the end of year ",i,": ",population)
+#
 
 # Calcul;ate the sequenxce till the nth term
 #1/1! + 2/2! +...
 
-n = int(input("Enter the nth term: "))
-import math
-sum = 0
-for i in range(1,n+1):
-    sum = sum + i/math.factorial(i)
-print(sum)
+# n = int(input("Enter the nth term: "))
+# import math
+# sum = 0
+# for i in range(1,n+1):
+#     sum = sum + i/math.factorial(i)
+# print(sum)
+#Nested loops
+#patterns
 
+
+# for row in range(0,4):
+#     str = ""
+#     for col in range(0,4):
+#         str = str + "* "
+#     print(str)
+# print("--------------------------------------------------------")
+# for row in range(0,4):
+#     str = ""
+#     for col in range(0,row+1):
+#         str = str +"* "
+#     print(str)
+# print("------------------------------------------------------------")
+
+# for row in range(0,4):
+#     str = ""
+#     for col in range (0,4):
+#         if (row == 0 or row == 3 or col == 0 or col == 3):
+#             str = str +"* "
+#         else:
+#             str = str + "  "
+#     print(str)
+# print("-----------------------------------------------------------")
+# for row in range(0,4):
+#     stri = ""
+#     for col in range(0,row+1):
+#         stri = stri + str(col+row+1)
+#     print(stri)
+
+# for row in range (0,4):
+#     for col in range(0,4):
+#         print("* ",end="")
+#     print()
+# print()
+
+# print("hello")
+# for row in range (0,5):
+#     for col in range (0,row+1):
+#         print(col+1,end = "")
+#     for col2 in range (row,0,-1):
+#         print(col2,end = "")
+#     print()
+
+# break,continue
+# for i in range (10):
+#     if i==5:
+#         break
+#     print(i,end="")
+# print()
+
+lower = int(input("Enter the lower limit: "))
+upper = int(input("Enter the upper limit: "))
+
+for i in range(lower,upper+1):
+    for j in range(2,i):
+        if i%j==0:
+            break
+
+    else:
+        print(i, end = "\n")
+    
 
 
 
