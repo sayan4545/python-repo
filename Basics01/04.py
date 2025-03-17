@@ -27,13 +27,45 @@
 
 # print(list("Hello"))
 
-l1 = [1,3,5,7]
-# print(l1[0:3])
-# print(len(l1))
+# l1 = [1,3,5,7]
+# # print(l1[0:3])
+# # print(len(l1))
 
-l1.append(True)
-print(id(l1))
-l1.append([4,[5,6,[7,8,9,[10,11]]]])
-print(id(l1))
-l1.extend(list("Hello"))
-print(id(l1))
+# l1.append(True)
+# print(id(l1))
+# l1.append([4,[5,6,[7,8,9,[10,11]]]])
+# print(id(l1))
+# l1.extend(list("Hello"))
+# print(id(l1))
+
+# l2 = [3,4,6,8,True,False]
+# l2[4] = 0
+# print(l2)
+
+# l3 =[1,2,3,4,5,6]
+# print(id(l3))
+# l3[1:4]= [100,200,300]
+# print(l3)
+# print(id(l3))
+
+l = [2,5,7,9,10]
+print(l,id(l))
+del(l[3])
+print(l,id(l))
+
+# print(l.remove(5))
+print(l)
+
+list1 = [1,2,3.7,True,'Sayan',[5,6],7+9j]
+for i in list1:
+    if i == [5,6]:
+        continue
+    print(i,end =" ")
+print()
+
+print(len(list1))
+list2 = [2,4,1,2,89,76]
+print(list2,id(list2))
+print(sorted(list2),id(sorted(list2)))
+
+
